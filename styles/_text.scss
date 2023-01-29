@@ -1,0 +1,21 @@
+@use "mixin" as *;
+
+h1 {
+  font-weight: 700 !important;
+  @include adaptiv-font(32, 80);
+}
+h2 {
+  font-weight: 600 !important;
+  @include adaptiv-font(28, 35);
+}
+h3 {
+  font-weight: 600 !important;
+  @include adaptiv-font(24, 30);
+}
+h4 {
+  font-weight: 600 !important;
+  @include adaptiv-font(17, 20);
+}
+p {
+  @include adaptiv-font(12, 16);
+}
