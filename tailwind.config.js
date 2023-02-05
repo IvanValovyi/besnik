@@ -20,6 +20,11 @@ module.exports = {
       blueLight: "#52C0FF",
       grayDark: "#535354",
       grayLight: "#5F5F64",
+      grayBorder: "#DFDFDF",
+    },
+    container: {
+      padding: "15px",
+      center: true,
     },
     extend: {},
   },
