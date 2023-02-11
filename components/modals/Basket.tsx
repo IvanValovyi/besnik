@@ -1,7 +1,6 @@
-import { Close } from "@/common/icons";
+import Close from "@/public/icons/close.svg";
 import { useModal } from "@/context/Modal";
 import Image from "next/image";
-import { useMemo, useState } from "react";
 
 interface Props {
   showed: boolean;

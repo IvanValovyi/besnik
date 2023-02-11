@@ -1,4 +1,4 @@
-import { ArrowRight } from "@/common/icons";
+import ArrowRight from "@/public/arrow-right.svg";
 import { useModal } from "@/context/Modal";
 import Image from "next/image";
 
