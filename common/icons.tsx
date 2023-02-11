@@ -1,8 +1,8 @@
 import { Icon } from "./types";
-
 export const Fire = ({ className }: Icon) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
+    className={className}
     width="70"
     height="80"
     viewBox="0 0 70 80"
