@@ -1,4 +1,5 @@
-import { Close, Logo } from "@/common/icons";
+import Close from "@/public/icons/close.svg";
+import Logo from "@/public/icons/logo.svg";
 import Link from "next/link";
 import { links } from "../Header";
 
