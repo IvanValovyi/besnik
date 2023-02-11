@@ -26,17 +26,16 @@ export default function MenuModal({ showed, close }: Props) {
       </div>
       {links.map((link, i) => {
         return (
-          <>
-            <Link
-              href={link.href}
-              className={
-                "text-[24px] border-b-[1px] border-b-grayLight px-[5px] font-medium"
-              }
-              onClick={close}
-            >
-              {link.text}
-            </Link>
-          </>
+          <Link
+            key={i}
+            href={link.href}
+            className={
+              "text-[24px] border-b-[1px] border-b-grayLight px-[5px] font-medium"
+            }
+            onClick={close}
+          >
+            {link.text}
+          </Link>
         );
       })}
     </div>
