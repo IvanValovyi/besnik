@@ -1,6 +1,6 @@
 import { Close, Logo } from "@/common/icons";
 import Link from "next/link";
-import { links } from "./Header";
+import { links } from "../Header";
 
 interface Props {
   showed: boolean;

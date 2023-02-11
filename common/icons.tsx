@@ -82,10 +82,26 @@ export const Menu = ({ className, onClick }: Icon) => (
   >
     <path
       d="M24 18v1h-24v-1h24zm0-6v1h-24v-1h24zm0-6v1h-24v-1h24z"
-      fill="#1040e2"
+      fill="currentColor"
     />
     <path
       d="M24 19h-24v-1h24v1zm0-6h-24v-1h24v1zm0-6h-24v-1h24v1z"
+      fill="currentColor"
+    />
+  </svg>
+);
+
+export const ArrowRight = ({ className }: Icon) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="8"
+    viewBox="0 0 20 8"
+    fill="none"
+    className={className || ""}
+  >
+    <path
+      d="M20 4L14.9713 4.1687e-07L14.9713 3.2L5.72394e-08 3.2L3.81596e-08 4.8L14.9713 4.8L14.9713 8L20 4Z"
       fill="currentColor"
     />
   </svg>

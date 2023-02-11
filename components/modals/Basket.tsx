@@ -1,6 +1,7 @@
 import { Close } from "@/common/icons";
+import { useModal } from "@/context/Modal";
 import Image from "next/image";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 
 interface Props {
   showed: boolean;
@@ -8,7 +9,7 @@ interface Props {
 }
 
 export default function BasketModal({ showed, close }: Props) {
-  const [showWarning, setShowWarning] = useState(false);
+  const { UseActionsDialog } = useModal();
   return (
     <div
       className={`fixed w-[100vw] z-50 h-[100vh] top-[0%] ${
@@ -41,39 +42,17 @@ export default function BasketModal({ showed, close }: Props) {
         <button
           className="py-[10px] px-[20px] rounded-[20px] bg-orange text-white lg:hover:scale-[1.1] lg:active:scale-[0.9] transition-all"
           onClick={() => {
-            setShowWarning(true);
+            UseActionsDialog({
+              showed: true,
+              data: {
+                title: "Sorry, but this feature is currently unavailable",
+                text: "The function of adding a product to the cart is under development.",
+              },
+            });
           }}
         >
           ADD FIRST PRODUCT
         </button>
-      </div>
-      <div
-        id="shadow"
-        className={`z-20 absolute w-full h-full transition-all bg-mainBg bg-opacity-[0.8] flex items-center justify-center ${
-          showWarning ? "opacity-1 left-0" : "opacity-0 left-[100%]"
-        }`}
-        onClick={(e: any) => {
-          e.target.id == "shadow" && setShowWarning(false);
-        }}
-      >
-        <div className="relative z-30 bg-mainBg w-50% h-max p-[25px] rounded-[25px] drop-shadow-2xl opacity-1 select-text mx-[10px] xl:mx-[0px]">
-          <h4 className="text-[24px] font-medium mb-[8px]">
-            Sorry, but this feature is currently unavailable
-          </h4>
-          <p className="text-grayLight">
-            The function of adding a product to the cart is under development.
-          </p>
-          <div className="flex justify-end">
-            <button
-              className="mt-[12px] p-[10px] rounded-[10px] border-[1px] border-grayBorder bg-white lg:hover:border-grayLight lg:active:border-grayDark"
-              onClick={(e) => {
-                setShowWarning(false);
-              }}
-            >
-              OK
-            </button>
-          </div>
-        </div>
       </div>
     </div>
   );

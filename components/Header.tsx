@@ -1,8 +1,8 @@
 import { Basket, Logo, Menu } from "@/common/icons";
 import Link from "next/link";
-import BasketModal from "./Basket";
+import BasketModal from "./modals/Basket";
 import { useState } from "react";
-import MenuModal from "./Menu";
+import MenuModal from "./modals/Menu";
 
 interface LinkItem {
   text: string;
