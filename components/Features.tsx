@@ -1,4 +1,4 @@
-import { Fire } from "@/common/icons";
+import Fire from "@/public/icons/fire.svg";
 
 export default function Features() {
   return (
