@@ -31,7 +31,7 @@ export default function Features() {
           </div>
           <div>deals for you</div>
         </h2>
-        <p className="text-grayLight max-w-[233px] leading-[26px]">
+        <p className="text-grayLight sm:max-w-[233px] leading-[26px]">
           Online shopping for retail sales direct to consumers
         </p>
       </div>
@@ -43,7 +43,7 @@ export default function Features() {
         >
           <Image className="mb-[30px]" src={article.img} alt="square" />
           <h4 className="mb-[18px] text-blackDark">{article.title}</h4>
-          <p className="text-grayLight max-w-[233px] leading-[26px]">
+          <p className="text-grayLight sm:max-w-[233px] leading-[26px]">
             {article.text}
           </p>
         </div>
