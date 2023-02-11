@@ -25,7 +25,7 @@ const items: Item[] = [
 export default function Customers() {
   return (
     <div className="container flex flex-col items-center mt-[130px]">
-      <h1 className={"leading-none text-blackDark mb-[40px]"}>
+      <h1 className={"leading-none text-blackDark mb-[30px] md:mb-[40px]"}>
         1000+ Customer
       </h1>
       <p className="text-grayLight max-w-[640px] text-center leading-[28px]">
@@ -34,13 +34,11 @@ export default function Customers() {
         Get social calendars planned faster and spend less time testing content
         strategies.
       </p>
-      <div className="mt-[90px] flex items-center justify-between w-full border-b-[1px] border-t-[1px] border-grayLight">
+      <div className="mt-[60px] md:mt-[90px] flex items-center justify-between flex-wrap w-full border-b-[1px] border-t-[1px] border-grayLight">
         {items.map((item, i) => {
           return (
             <div
-              className={`flex flex-col items-center py-[70px] flex-auto ${
-                i != 0 ? "border-l-[1px] border-grayLight" : ""
-              }`}
+              className="flex flex-col items-center py-[50px] md:py-[70px] flex-auto w-full sm:w-[50%] md:border-l-[1px] border-l-0] sm:border-b-0 border-b-[1px] md:w-auto border-grayLight first:border-l-0 last:border-b-0"
               key={i}
             >
               <p className="text-grayLight mb-[10px] family-inter tracking-[0.4em]">
