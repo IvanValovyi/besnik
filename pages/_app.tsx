@@ -7,7 +7,10 @@ const inter = Inter({ subsets: ["latin"], weight: ["500", "700"] });
 
 const roboto = Roboto({ subsets: ["latin"], weight: ["400", "500"] });
 
-const bai_jamjuree = Bai_Jamjuree({ subsets: ["latin"], weight: ["700"] });
+const bai_jamjuree = Bai_Jamjuree({
+  subsets: ["latin"],
+  weight: ["700", "500"],
+});
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
