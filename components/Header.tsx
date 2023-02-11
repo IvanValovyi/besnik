@@ -35,16 +35,15 @@ export default function Header() {
       <div className="hidden xl:flex gap-[44px]">
         {links.map((link, i) => {
           return (
-            <>
-              <Link
-                href={link.href}
-                className={
-                  "font-medium relative before:absolute before:bottom-[1px] before:left-[0] before:h-[1px] before:bg-orange before:w-[0%] lg:hover:before:w-[100%] before:duration-300 before:transition-all lg:active:opacity-[0.7] transition-opacity"
-                }
-              >
-                {link.text}
-              </Link>
-            </>
+            <Link
+              key={i}
+              href={link.href}
+              className={
+                "font-medium relative before:absolute before:bottom-[1px] before:left-[0] before:h-[1px] before:bg-orange before:w-[0%] lg:hover:before:w-[100%] before:duration-300 before:transition-all lg:active:opacity-[0.7] transition-opacity"
+              }
+            >
+              {link.text}
+            </Link>
           );
         })}
       </div>
@@ -63,16 +62,15 @@ export default function Header() {
         <div className="hidden md:flex gap-[44px] xl:hidden">
           {links.map((link, i) => {
             return (
-              <>
-                <Link
-                  href={link.href}
-                  className={
-                    "font-medium relative before:absolute before:bottom-[1px] before:left-[0] before:h-[1px] before:bg-orange before:w-[0%] lg:hover:before:w-[100%] before:duration-300 before:transition-all lg:active:opacity-[0.7] transition-opacity"
-                  }
-                >
-                  {link.text}
-                </Link>
-              </>
+              <Link
+                key={i}
+                href={link.href}
+                className={
+                  "font-medium relative before:absolute before:bottom-[1px] before:left-[0] before:h-[1px] before:bg-orange before:w-[0%] lg:hover:before:w-[100%] before:duration-300 before:transition-all lg:active:opacity-[0.7] transition-opacity"
+                }
+              >
+                {link.text}
+              </Link>
             );
           })}
         </div>

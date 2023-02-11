@@ -49,6 +49,7 @@ export default function Intro() {
         width={724}
         height={422}
         className="w-full lg:w-[724px]"
+        priority
       />
     </div>
   );
