@@ -22,7 +22,7 @@ const articles = [
 
 export default function Features() {
   return (
-    <div className="container mt-[130px] mb-[100px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-3 gap-y-3 md:gap-y-0">
+    <div className="container mt-[130px] mb-[100px] grid grid-cols-1 items-center sm:grid-cols-2 lg:grid-cols-4 gap-3">
       <div className="flex flex-col items-center sm:items-start">
         <h2 className="mb-[18px]">
           <div className="flex justify-start text-blackDark">
@@ -31,7 +31,7 @@ export default function Features() {
           </div>
           <div>deals for you</div>
         </h2>
-        <p className="text-grayLight leading-[26px]">
+        <p className="text-grayLight max-w-[233px] leading-[26px]">
           Online shopping for retail sales direct to consumers
         </p>
       </div>
@@ -43,7 +43,9 @@ export default function Features() {
         >
           <Image className="mb-[30px]" src={article.img} alt="square" />
           <h4 className="mb-[18px] text-blackDark">{article.title}</h4>
-          <p className="text-grayLight leading-[26px]">{article.text}</p>
+          <p className="text-grayLight max-w-[233px] leading-[26px]">
+            {article.text}
+          </p>
         </div>
       ))}
     </div>
