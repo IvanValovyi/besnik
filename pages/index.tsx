@@ -1,16 +1,15 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "@next/font/google";
-import styles from "@/styles/Home.module.css";
-import { Fire } from "@/common/icons";
 import Features from "@/components/Features";
-
-const inter = Inter({ subsets: ["latin"] });
+import Header from "@/components/Header";
+import Intro from "@/components/Intro";
+import Customers from "@/components/Customers";
 
 export default function Home() {
   return (
     <>
+      <Header />
+      <Intro />
       <Features />
+      <Customers />
     </>
   );
 }
