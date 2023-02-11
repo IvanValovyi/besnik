@@ -3,6 +3,7 @@ import Intro from "@/components/Intro";
 import Customers from "@/components/Customers";
 import Header from "@/components/Header";
 import AboutUs from "@/components/AboutUs";
+import Subscribe from "@/components/Subscribe";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Features />
       <AboutUs />
       <Customers />
+      <Subscribe />
     </>
   );
 }
