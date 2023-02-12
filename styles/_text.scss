@@ -7,6 +7,9 @@ h1 {
 h2 {
   font-weight: 600 !important;
   @include adaptiv-font(28, 35);
+  &.text-l {
+    @include adaptiv-font(30, 52);
+  }
 }
 h3 {
   font-weight: 600 !important;

@@ -22,7 +22,7 @@ const articles = [
 
 export default function Features() {
   return (
-    <div className="container mt-[130px] mb-[100px] grid grid-cols-1 items-center sm:grid-cols-2 lg:grid-cols-4 gap-3">
+    <div className="container mt-[70px] md:mt-[130px] mb-[100px] grid grid-cols-1 items-center sm:grid-cols-2 lg:grid-cols-4 gap-3">
       <div className="flex flex-col items-center sm:items-start">
         <h2 className="mb-[18px]">
           <div className="flex justify-start text-blackDark">

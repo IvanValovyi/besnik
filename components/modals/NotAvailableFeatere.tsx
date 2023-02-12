@@ -6,7 +6,7 @@ export default function NotAvailableFeatere({ showed, data }: modalValue) {
   return (
     <div
       id="shadow"
-      className={`z-50 fixed top-0 w-full h-full transition-all bg-mainBg bg-opacity-[0.8] flex items-center justify-center ${
+      className={`z-50 fixed top-0 w-full h-full transition-all ease-linear bg-mainBg bg-opacity-[0.8] flex items-center justify-center ${
         showed ? "opacity-1 left-0" : "opacity-0 left-[100%]"
       }`}
       onClick={(e: any) => {

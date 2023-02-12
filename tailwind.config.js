@@ -21,12 +21,18 @@ module.exports = {
       grayDark: "#535354",
       grayLight: "#5F5F64",
       grayBorder: "#DFDFDF",
+      yellow: "#FFD968",
     },
     container: {
       padding: "15px",
       center: true,
     },
-    extend: {},
+    extend: {
+      animation: {
+        "spin-slow": "spin 10s linear infinite",
+      },
+    },
   },
+
   plugins: [],
 };

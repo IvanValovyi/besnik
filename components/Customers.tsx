@@ -24,8 +24,12 @@ const items: Item[] = [
 
 export default function Customers() {
   return (
-    <div className="container flex flex-col items-center mt-[130px]">
-      <h1 className={"leading-none text-blackDark mb-[30px] md:mb-[40px]"}>
+    <div className="container flex flex-col items-center mt-[70px] md:mt-[130px]">
+      <h1
+        className={
+          "leading-none text-blackDark mb-[30px] md:mb-[40px] family-bai_jamjuree"
+        }
+      >
         1000+ Customer
       </h1>
       <p className="text-grayLight max-w-[640px] text-center leading-[28px]">
