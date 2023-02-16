@@ -28,11 +28,11 @@ export default function Subscribe() {
                   showed: true,
                   data: {
                     title: "Sorry, but this feature is currently unavailable",
-                    text: "The function of receiving a card is under development.",
+                    text: "The function of subscription is under development.",
                   },
                 });
               }}
-              className="py-[21px] px-[44px] bg-orange w-max text-white cursor-pointer"
+              className="py-[21px] px-[44px] bg-orange w-max text-white cursor-pointer hover:text-orange hover:bg-white transition-all"
             >
               <p>Subscribe</p>
             </div>
