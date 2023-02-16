@@ -25,15 +25,15 @@ export default function Footer() {
           Login
         </Link>
 
-        <div className="flex items-center">
+        <div className="flex items-center mb-5">
           <Link href="/">
-            <Facebook className="mr-[30px]" />
+            <Facebook className="w-[13px] mr-[30px]" />
           </Link>
           <Link href="/">
-            <Instagram className="mr-[30px]" />
+            <Instagram className="w-[13px] mr-[30px]" />
           </Link>
 
-          <Link href="/">
+          <Link href="/" className="w-[13px]">
             <Youtube />
           </Link>
         </div>
