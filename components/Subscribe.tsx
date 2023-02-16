@@ -1,7 +1,10 @@
 import CircleText from "@/public/icons/circleText.svg";
 import Image from "next/image";
+import { useModal } from "@/context/Modal";
 
 export default function Subscribe() {
+  const { UseActionsDialog } = useModal();
+
   return (
     <div className="bg-blueDark mt-[120px] overflow-hidden">
       <div className="container lg:py-[115px] flex justify-between flex-col lg:flex-row">
@@ -19,7 +22,18 @@ export default function Subscribe() {
               Subscribe our newsletter
             </h1>
 
-            <div className="py-[21px] px-[44px] bg-orange w-max text-white">
+            <div
+              onClick={() => {
+                UseActionsDialog({
+                  showed: true,
+                  data: {
+                    title: "Sorry, but this feature is currently unavailable",
+                    text: "The function of receiving a card is under development.",
+                  },
+                });
+              }}
+              className="py-[21px] px-[44px] bg-orange w-max text-white cursor-pointer"
+            >
               <p>Subscribe</p>
             </div>
           </div>
