@@ -33,3 +33,7 @@ p {
     @include adaptiv-font(14, 18);
   }
 }
+
+.text-1 {
+  @include adaptiv-font(12, 14);
+}
