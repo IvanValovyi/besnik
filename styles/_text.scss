@@ -25,4 +25,8 @@ h5 {
 }
 p {
   @include adaptiv-font(12, 16);
+
+  &.text-1 {
+    @include adaptiv-font(14, 18);
+  }
 }
