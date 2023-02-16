@@ -16,7 +16,7 @@ export default function Home() {
       <AboutUs />
       <Customers />
       <Handoff />
-      {/* <Subscribe /> */}
+      <Subscribe />
       <Footer />
     </>
   );
