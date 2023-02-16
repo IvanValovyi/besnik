@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Subscribe() {
   return (
-    <div className="bg-blueDark mt-[120px]">
+    <div className="bg-blueDark mt-[120px] overflow-hidden">
       <div className="container lg:py-[115px] flex justify-between flex-col lg:flex-row">
         <div className="flex justify-between flex-col sm:flex-row w-full sm:pt-[70px]">
           <div className="pt-[36px] flex items-end justify-between sm:block sm:w-1/2 lg:w-auto">
